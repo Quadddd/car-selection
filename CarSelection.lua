@@ -55,7 +55,7 @@ RunService:BindToRenderStep("CarSelection", Enum.RenderPriority.Last.Value, func
     end
 end)
 
-moust.Button1Down:Connect(function()
+mouse.Button1Down:Connect(function()
     if not mouse.Target then return end
     local car = GetCarFromPart(mouse.Target)
     if car then
